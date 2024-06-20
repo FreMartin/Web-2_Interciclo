@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %} Inicio {% endblock %}
+
+{% block content %} 
+    <div class="d-flex justify-content-center align-items-center" >
+        <div class="col-md-6">
+            <div
+                class="h-100 p-5 text-white bg-light p-1 border rounded-3"
+            >
+                <h2 class="text-dark">Bienvenidos al sitio de la Biblioteca</h2>
+                <p class="text-dark">Aqui puedes gestionar los libros</p>
+                <hr>
+                <a
+                    name=""
+                    id=""
+                    class="btn btn-primary"
+                    href="{% url 'lista' %}"
+                    role="button"
+                    >Comenzar</a
+                >
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Detalles de {{libro.titulo}}</h4>
+            <div
+                class="table-responsive"
+            >
+                <table
+                    class="table table-primary"
+                >
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Titulo</th>
+                            <th scope="col">Autor</th>
+                            <th scope="col">ISBN</th>
+                            <th scope="col">Fecha de Publicacion</th>
+                            <th scope="col">Imagen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <td>{{libro.id}}</td>
+                            <td>{{libro.titulo}}</td>
+                            <td>{{libro.autor}}</td>
+                            <td>{{libro.isbn}}</td>
+                            <td>{{libro.fecha_publicacion}}</td>
+                            <td>{{libro.ruta_img}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <a
+        name=""
+        id=""
+        class="btn btn-warning"
+        href="{% url 'lista' %}"
+        role="button"
+        >Salir</a
+    >
+            
+        </div>
+        <div class="card-footer text-muted"></div>
+    </div>
+    
+{% endblock %}
